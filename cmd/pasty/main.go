@@ -7,6 +7,7 @@ import (
 	"github.com/lus/pasty/internal/config"
 	"github.com/lus/pasty/internal/storage"
 	"github.com/lus/pasty/internal/web"
+	"github.com/lus/pasty/internal/prompt"
 )
 
 func main() {
@@ -45,6 +46,9 @@ func main() {
 			}
 		}()
 	}
+	
+	// Load the prompt
+	go prompt.Load()
 
 	// Serve the web resources
 	log.Println("Serving the web resources...")

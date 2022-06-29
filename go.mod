@@ -3,6 +3,7 @@ module github.com/lus/pasty
 go 1.16
 
 require (
+	github.com/AlecAivazis/survey/v2 v2.3.5 // indirect
 	github.com/alexedwards/argon2id v0.0.0-20200802152012-2464efd3196b
 	github.com/fasthttp/router v1.2.4
 	github.com/go-stack/stack v1.8.1 // indirect
